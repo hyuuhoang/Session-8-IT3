@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: left;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 3px solid red;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: stretch; /* Đảm bảo các thẻ có chiều cao bằng nhau */
+}
+
+.card {
+    width: 30%;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: 200px; /* Đặt chiều cao cố định cho ảnh */
+    object-fit: cover; /* Giữ tỉ lệ ảnh và cắt phần dư */
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    flex-grow: 1; /* Để phần mô tả có thể co giãn giúp cân bằng các card */
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    border: 1px solid red;
+    color: red;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: red;
+    color: white;
+}
